@@ -1,0 +1,359 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,p,blockquote,th,td{
+	margin:0;padding:0;
+	vertical-align: baseline;
+	outline: 0;
+}
+ul {list-style:none;}
+
+a {
+	color: #105CB6;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+body {
+	background: white;
+	color: #444;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 75%;
+	line-height: 1;
+	padding-bottom: 2.33333333333em;
+}
+
+h1 {
+	font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+	font-weight: bold;
+	font-size: 170%;
+	margin-bottom: 7px;
+}
+
+h3 {
+	font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+	font-size: 110%;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.group::after{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clear{
+	clear:both;
+}
+
+.clear-right{
+	clear:right;
+}
+
+.clear-left{
+	clear:left;
+}
+
+.post-text {
+	line-height: 23px;
+	font-size: 14px;
+}
+
+.subheader {
+	border-bottom: 1px solid #666;
+	height: 34px;
+	clear: both;
+	margin-bottom: 15px;
+}
+
+.subheader h1, .subheader h2 {
+	float: left;
+	font-size: 170%;
+	line-height: 34px;
+	margin-bottom: 0px;
+}
+
+.subheader .tab{
+	float: right;
+	font-weight: bold;
+}
+
+.subheader .tab a {
+	background: inherit;
+	border: 1px solid white;
+	color: #777;
+	display: block;
+	float: left;
+	font-size: 90%;
+	height: 24px;
+	line-height: 22px;
+	margin: 8px 8px 0 0;
+	padding: 0 11px 0 11px;
+	text-decoration: none;
+}
+
+
+.subheader .tab a.active {
+	background: white;
+	border: 1px solid #777;
+	border-bottom-color: white;
+	color: black;
+	font-size: 120%;
+	height: 30px;
+	line-height: 28px;
+	margin-top: 3px;
+	padding: 0px 11px 0px 11px;
+}
+
+/**
+ * header
+ */
+
+#header {
+	background-color: #195695;
+}
+
+.header-content {
+	margin: 0 auto;
+	padding: 7px 0;
+	width: 960px;
+	position: relative;
+}
+
+.header-logo{
+	background: url(../images/stuff.png) no-repeat 0 -109px;
+	display: block;
+	height: 30px;
+	margin: 3px 11px 0 0;
+	text-indent: -9001em;
+	width: 62px;
+	float: left;
+}
+
+
+.header-nav {
+	margin-right: 5px;
+	padding-top: 4px;
+}
+
+.header-nav li{
+	float: left;
+}
+
+.header-nav li a{
+	color: white;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 6px 10px 8px;
+}
+
+.header-nav li a.active {
+	background-color: #164673;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+.header-content form.search {
+	float: right;
+	margin-left: 10px;
+	padding-top: 3px;
+}
+
+.header-content form.search input{
+	border: none;
+	border-right: 1px solid #507C0C;
+	color: #7AA1C2;
+	float: left;
+	font-size: 1.08333333333em;
+	height: 26px;
+	padding: 0 8px;
+	width: 180px;
+	border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;	
+}
+
+.header-content form.search .btn {
+	border: none;
+	height: 26px;
+	text-align: center;
+	width: 30px;
+	border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	background: -webkit-gradient(linear,left top,left bottom,from(#C1D0E3),to(#7F96B6));
+	background: -moz-linear-gradient(top,#C1D0E3,#7F96B6);
+	background-color: #7F96B6;
+}
+
+.header-content .btn span {
+	background: url(../images/stuff.png) no-repeat 0 -42px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	height: 13px;
+	width: 12px;
+	vertical-align: 0;
+	zoom: 1;
+	
+}
+
+/**
+ * =========================== Content ============================== 
+ */
+
+#content {
+	margin: 0 auto;
+	width: 960px;
+	min-height: 450px;
+	padding-top:20px;
+}
+
+#mainbar {
+	float: left;
+	margin-bottom: 40px;
+	width: 735px;
+}
+
+#sidebar {
+	overflow: hidden;
+	float: right;
+	margin-bottom: 60px;
+	width: 220px;
+}
+
+
+
+#mainbar .subquestions {
+	overflow: auto;
+	margin-top: -10px;
+	margin-bottom: 30px;
+}
+
+#mainbar .subquestions .question-summary {
+	border-bottom: 1px dotted #999;
+	overflow: hidden;
+	padding: 11px 0px;
+	width: 730px;
+	float: left;
+}
+
+#mainbar .subquestions .question-summary .cp{
+	float: left;
+	margin-right:5px;
+}
+
+#mainbar .subquestions .question-summary .block{
+	cursor: pointer;
+	background: transparent;
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 5px;
+	width: 38px;
+	height: 38px;
+	color: #555;
+	padding: 0 0 7px 0;
+	text-align: center;
+	
+}
+
+#mainbar .subquestions .question-summary .votes {
+	color: #555;
+}
+
+#mainbar .subquestions .question-summary .answered {
+	color: #9A4444;
+}
+
+#mainbar .subquestions .question-summary .views {
+	color: #999;
+}
+
+#mainbar .subquestions .question-summary .block .mini-counts {
+	height: 25px;
+	font-size: 190%;
+	font-weight: bold;
+}
+
+#mainbar .subquestions .question-summary .summary {
+	width: 600px;
+	float: left;
+}
+
+#mainbar .subquestions .question-summary .summary h3 a{
+	font-size: 130%;
+	font-weight: bold;
+	line-height:20px;
+}
+
+.tags {
+	line-height: 18px;
+	float: left;
+}
+
+.tags .post-tag {
+	background-color: #3E6D8E;
+	color: #E0EAF1;
+	border-bottom: 1px solid #37607D;
+	border-right: 1px solid #37607D;
+	text-decoration: none;
+	display:block;
+	float:left;
+	margin:2px;
+	padding:2px;
+}
+
+#mainbar .subquestions .question-summary .summary .started {
+	width: auto;
+	line-height: inherit;
+	padding-top: 4px;
+	white-space: nowrap;
+	color: #999;
+	float: right;
+	line-height: 18px;
+}
+
+/**
+ * ---------------------  Question -----------------
+ */
+
+#mainbar .q-title {
+	border-bottom: 1px solid #666;
+	clear: both;
+	margin-bottom: 15px;
+}
+
+#mainbar .q-content {
+	width: 660px;
+	margin: 10px 0px 100px 5px;
+}
+
+
+#mainbar .a-title {
+	margin-top:10px;
+}
+
+
+#mainbar .q-answer {
+	border-bottom: 1px solid #AAA;
+	width: 650px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-left:20px;
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
