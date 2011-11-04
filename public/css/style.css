@@ -346,6 +346,20 @@ h3 {
 	float:right;
 }
 
+#mainbar .q-answer-comments{
+	border-top: dotted 1px #AAA;
+	margin-top: 10px;
+}
+
+#mainbar .q-answer-comment{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: dotted 1px #DDD;
+	font-size:12px;
+}
+
+
+
 
 
 
